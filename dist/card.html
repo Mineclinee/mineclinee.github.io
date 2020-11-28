@@ -20,34 +20,34 @@
                         </div>
         
                         <ul class="header__communication">
-                            <li class="header__item">
-                                <p class="header__item-consultation">
+                            <li class="header__item header__item--consultation">
+                                <p class="header__text">
                                     ייעוץ
                                     אישי    
                                 </p>
                             </li>
-                            <li class="header__item">
-                                <p class="header__item-delivery">
+                            <li class="header__item header__item--delivery">
+                                <p class="header__text">
                                     משלוחים
                                     לכל הארץ
                                 </p>
                             </li>
-                            <li class="header__item">
-                                <p class="header__item-whatsapp">
+                            <li class="header__item header__item--whatsapp">
+                                <p class="header__text">
                                     זמינים גם
                                     בווטסאפ
                                 </p>
                             </li>
-                            <li class="header__item">
-                                <p class="header__item-facebook">
+                            <li class="header__item header__item--facebook">
+                                <p class="header__text">
                                     עקבו אחרנו
                                     בפייסבוק
                                 </p>
                             </li>
                         </ul>
                         
-                        <a class="logo" href="index.html">
-                            <img class="logo__img" src="assets/img/logo.svg" alt="">
+                        <a class="logo" href="index.html" aria-label="לוגו">
+                            <img class="logo__img" src="assets/img/logo.svg" alt="הלוגו">
                         </a>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                 
                 <div class="card-content">
                     <div class="container">
-                        <div class="card__left">
+                        <div class="card__right">
                             <div class="card-info">
                                 <h3 class="card-info__title">במידה 300X300
                                     מחסן גינה מפנל מבודד רב שימושי</h3>
@@ -190,7 +190,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card__right">
+                        <div class="card__left">
                             <div class="card-main">
                                 <img src="assets/img/products/card-main.png" alt="#">
                             </div>
@@ -232,12 +232,13 @@
                                     <div class="order__name">בקשה להזמנה:</div>
                                     <h4 class="order__title">מחסן גינה מפנל מבודד רב שימושי במידה 300X300</h4>
                                     <p class="order__required">שים/י לב כי יש למלא את כל השדות, ובפרט את שדות החובה המסומנים בכוכבית (*)</p>
-                                    <form action="#" class="order__form">
+                                    <form action="#" class="order-form">
                                         <div class="order__wrapper">
-                                            <input class="order__input" required type="text" placeholder="*שם">
-                                            <input class="order__input" required type="text" placeholder="*עיר">
-                                            <input class="order__input" required type="text" placeholder="*אימייל">
-                                            <div class="order-select" tabindex="0">
+                                            <input class="order-form__input contact-form__input" required type="text" placeholder="*שם">
+                                            <input class="order-form__input contact-form__input" required type="text" placeholder="*עיר">
+                                            <input class="order-form__input contact-form__input" required type="email" placeholder="*אימייל">
+                
+                                            <div class="order-select">
                                                 <div class="order-select__top">*תוספות ושידרוגים:</div>
                                                 <div class="order-select__dropdown">
                                                     
@@ -271,15 +272,38 @@
                                                 </div>
                                             </div>
                 
-                                            <input class="order__input" required type="text" placeholder="*נייד">
+                                            <input dir="ltr" class="order-form__input order-form__input--tel contact-form__input" required type="tel" placeholder="*נייד">
                                         </div>
-                                        <button type="submit" class="order__btn btn">שלח הזמנה</button>
+                                        <button type="submit" class="order-form__btn btn">שלח הזמנה</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                <!-- <div class="modal-window">
+                    <div class="container">
+                        <div class="content">
+                            <button class="card-info__btn--order btn modal-btn" data-path="first" data-animation="fadeInUp" data-speed="300">להזמנה</button>
+                        </div>
+                        <div class="modal">
+                            <div class="modal__container" data-target="first">
+                                <button class="modal-close">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#close"></use>
+                                    </svg>
+                                </button>
+                                <div class="modal-content modal__thanks-container">
+                                    <div class="thanks">
+                                        <h4 class="thanks__title">בקשתך נשלחה בהצלחה!</h4>
+                                        <p class="thanks__subtitle">אנו מודים לך על פנייתך! אחד מנציגנו יחזור אליך בהקדם.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
             </section>
         </main>
 
@@ -299,10 +323,10 @@
                                         <a class="footer__link" href="catalog.html">קטלוג</a>
                                     </li>
                                     <li class="footer__item">
-                                        <a class="footer__link" href="#">אודות</a>
+                                        <a class="footer__link" href="info.html">אודות</a>
                                     </li>
                                     <li class="footer__item">
-                                        <a class="footer__link" href="#">צור קשר</a>
+                                        <a class="footer__link" href="contact.html">צור קשר</a>
                                     </li>
                                 </ul>
                             </nav>

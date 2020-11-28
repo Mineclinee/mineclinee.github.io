@@ -20,34 +20,34 @@
                         </div>
         
                         <ul class="header__communication">
-                            <li class="header__item">
-                                <p class="header__item-consultation">
+                            <li class="header__item header__item--consultation">
+                                <p class="header__text">
                                     ייעוץ
                                     אישי    
                                 </p>
                             </li>
-                            <li class="header__item">
-                                <p class="header__item-delivery">
+                            <li class="header__item header__item--delivery">
+                                <p class="header__text">
                                     משלוחים
                                     לכל הארץ
                                 </p>
                             </li>
-                            <li class="header__item">
-                                <p class="header__item-whatsapp">
+                            <li class="header__item header__item--whatsapp">
+                                <p class="header__text">
                                     זמינים גם
                                     בווטסאפ
                                 </p>
                             </li>
-                            <li class="header__item">
-                                <p class="header__item-facebook">
+                            <li class="header__item header__item--facebook">
+                                <p class="header__text">
                                     עקבו אחרנו
                                     בפייסבוק
                                 </p>
                             </li>
                         </ul>
                         
-                        <a class="logo" href="index.html">
-                            <img class="logo__img" src="assets/img/logo.svg" alt="">
+                        <a class="logo" href="index.html" aria-label="לוגו">
+                            <img class="logo__img" src="assets/img/logo.svg" alt="הלוגו">
                         </a>
                     </div>
                 </div>
@@ -89,13 +89,13 @@
                    <div class="contact__right">
                         <h3 class="contact__title section-title">שירות לקוחות:</h3>
             
-                        <form action="" class="contact__form">
-                            <input required type="text" placeholder="*שם" class="contact__input order__input">
-                            <input required type="text" placeholder="*עיר" class="contact__input order__input">
-                            <input required type="text" placeholder="*דואייל" class="contact__input order__input">
-                            <input required type="text" placeholder="*נייד" class="contact__input order__input">
-                            <textarea name="" id="" placeholder="*תוכן" rows="4" class="contact__textarea order__input"></textarea>
-                            <button class="contact__btn btn" type="submit">שלח</button>
+                        <form action="" class="contact-form">
+                            <input required type="text" placeholder="*שם" class="contact-form__input">
+                            <input required type="text" placeholder="*עיר" class="contact-form__input">
+                            <input required type="email" placeholder="*דואייל" class="contact-form__input">
+                            <input dir="ltr" required type="tel" placeholder="*נייד" class="contact-form__input contact-form__input--tel">
+                            <textarea name="" placeholder="*תוכן" rows="4" class="contact-form__textarea contact-form__input"></textarea>
+                            <button class="contact-form__btn btn" type="submit">שלח</button>
                         </form>
                    </div>
             
@@ -103,8 +103,8 @@
                         <div class="contact-box">
                             <div class="contact-box__top">
                                  <h3 class="contact__title section-title">דברו איתנו:</h3>
-                                 <a class="contact__phone header__phone">077-4661310</a>
-                                 <a class="contact__email header__email">gwarehouses@gmail.com</a>
+                                 <a href="tel:972774661310" class="contact__phone header__phone">077-4661310</a>
+                                 <a href="mailto:gwarehouses@gmail.com" class="contact__email header__email">gwarehouses@gmail.com</a>
                             </div>
                  
                             <div class="contact-box__bottom">
@@ -113,21 +113,21 @@
                                      <li class="social__item">
                                          <a href="#" class="social__link">
                                              <svg>
-                                             <use xlink:href="assets/img/sprite.svg#fb-contact"></use>
+                                                <use xlink:href="assets/img/sprite.svg#fb-contact"></use>
                                              </svg>
                                          </a>
                                      </li>
                                      <li class="social__item">
                                          <a href="#" class="social__link">
                                              <svg>
-                                             <use xlink:href="assets/img/sprite.svg#youtube-contact"></use>
+                                                <use xlink:href="assets/img/sprite.svg#youtube-contact"></use>
                                              </svg>
                                          </a>
                                      </li>
                                      <li class="social__item">
                                          <a href="#" class="social__link">
                                              <svg>
-                                             <use xlink:href="assets/img/sprite.svg#inst-contact"></use>
+                                                <use xlink:href="assets/img/sprite.svg#inst-contact"></use>
                                              </svg>
                                          </a>
                                      </li>
@@ -155,10 +155,10 @@
                                         <a class="footer__link" href="catalog.html">קטלוג</a>
                                     </li>
                                     <li class="footer__item">
-                                        <a class="footer__link" href="#">אודות</a>
+                                        <a class="footer__link" href="info.html">אודות</a>
                                     </li>
                                     <li class="footer__item">
-                                        <a class="footer__link" href="#">צור קשר</a>
+                                        <a class="footer__link" href="contact.html">צור קשר</a>
                                     </li>
                                 </ul>
                             </nav>
